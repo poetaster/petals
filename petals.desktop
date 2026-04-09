@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Icon=petals
+X-Nemo-Application-Type=silica-qt5
+Exec=sailfish-qml petals
+Name=Petals
+
+[X-Sailjail]
+OrganizationName=de.poetaster
+ApplicationName=petals
+Permissions=
+
