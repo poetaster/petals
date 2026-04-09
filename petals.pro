@@ -1,5 +1,5 @@
 # Update/generate flower artwork from SVG template
-system(python3 artwork/update.py artwork/flowers.svg qml/images/flowers)
+#system(python3 artwork/update.py artwork/flowers.svg qml/images/flowers)
 
 
 QT += quick qml
