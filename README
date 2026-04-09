@@ -1,0 +1,43 @@
+Petals: A brain-teasing puzzle for 1-4 players
+----------------------------------------------
+
+Copyright (C) 2013, 2015 Thomas Perl <m@thp.io>
+License: GNU General Public License, version 3 or later
+http://thp.io/2013/petals/
+
+
+In Petals, you have to find 3 flowers that belong together: The petal color,
+shape and count and the core color have to be either the same or pairwise
+different for all 3 flowers.
+
+Play alone against the time or up to a specific score in three different
+difficulty levels or compete in a 2-, 3- or 4-player game with friends.
+
+
+About
+-----
+
+The game logic is written entirely in JavaScript, QML adds the UI layer and
+a custom "widget set" provides a stack of screens. For the artwork, a single
+SVG template sheet is colored using a Python 3 script and then split into 81
+images for direct use by the engine (this had some performance benefits back
+in 2013, these days, one can probably load and cut/render the SVG at runtime).
+
+
+Build requirements
+------------------
+
+ - Qt 5 (http://www.qt.io/)
+ - Python 3 (https://www.python.org/)
+ - rsvg-convert from librsvg2 (https://wiki.gnome.org/Projects/LibRsvg)
+ - convert from ImageMagick (http://www.imagemagick.org/)
+
+
+Compiling and running
+---------------------
+
+Standard qmake configure/make steps apply here:
+
+  qmake-qt5
+  make
+  ./petals
