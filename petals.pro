@@ -16,13 +16,9 @@ DISTFILES += \
         qml/images/flowers/*,png \
         qml/*.js
 
-#RESOURCES += $${TARGET}.qrc
-#QMAKE_RESOURCE_FLAGS += -threshold 0 -compress 9
-#target.path = /usr/bin
-
 desktop.files = data/$${TARGET}.desktop
 desktop.path = /usr/share/applications
 
 INSTALLS += target desktop icon
 
-include(icons/icons.pri)
+SAILFISHAPP_ICONS = 86x86 108x108 128x128 172x172

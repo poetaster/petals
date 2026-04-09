@@ -88,7 +88,6 @@ desktop-file-install --delete-original       \
 %defattr(-,root,root,-)
 %{_datadir}/%{name}
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
-%{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/%{name}/qml
 # >> files

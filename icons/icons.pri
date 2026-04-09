@@ -16,8 +16,6 @@ appicon.sizes = \
     128 \
     172 \
     256 \
-    512 \
-    1024
 
 for(iconsize, appicon.sizes) {
     profile = $${iconsize}x$${iconsize}
