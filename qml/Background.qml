@@ -19,10 +19,24 @@
 
 import QtQuick 2.0
 
+import 'petals.js' as GameLib
+import 'util.js' as Util
+
 Screen {
     property alias color: main.color
+    property var cards:  ["a_a_c_a","b_b_c_c","b_a_c_a","c_b_b_c","b_c_a_c"];
+    function  init() {
 
-    Rectangle {
+        this.cards = ["a_a_c_a","b_a_b_b","c_c_a_c","c_a_b_c","c_c_c_a"];
+        for (var y=0; y<Petals.Rows; y++) {
+            for (var x=0; x<Petals.Columns; x++) {
+                this.cards.push(new Petals.Card(x, y));
+            }
+        }
+    }
+
+
+        Rectangle {
         id: main
         property int current: 0
         property variant colors: ['#136779']
@@ -41,9 +55,18 @@ Screen {
                 anchors.centerIn: parent
                 anchors.verticalCenterOffset: (2-index)*200
                 anchors.horizontalCenterOffset: Math.sin((2-index)*baseRotation*Math.PI/180)*200 + (2-index)*40
-                color: Qt.lighter(parent.color, 1.2)
+                color: "transparent"//Qt.lighter(parent.color, 1.2)
+                opacity: .50
                 rotation: baseRotation + 10* index
 
+                Image {
+                    anchors.fill: parent
+                    fillMode: Image.PreserveAspectFit
+                    smooth: true
+                    source: Qt.resolvedUrl("images/flowers/flowers_" + cards[index] + ".png" )
+                    opacity: .35
+
+                }
                 PropertyAnimation {
                     target: centerRect
                     property: 'baseRotation'

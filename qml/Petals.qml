@@ -141,10 +141,8 @@ Item {
 
             Image {
                 anchors.fill: parent
-
                 fillMode: Image.PreserveAspectFit
                 smooth: true
-
                 source: Util.cardImageUrl(modelData)
             }
 
