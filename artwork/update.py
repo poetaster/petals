@@ -63,7 +63,7 @@ def map_color(template, mapping, indices):
 def main(input_file, output_dir):
     template = open(input_file).read()
 
-    os.makedirs(output_dir)
+    #os.makedirs(output_dir)
 
     for index_a, character_a in enumerate('abc'):
         for index_b, character_b in enumerate('abc'):

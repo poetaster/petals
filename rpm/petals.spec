@@ -30,6 +30,7 @@ BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  desktop-file-utils
+BuildRequires:  sailfish-svg2png
 
 %description
 In Petals, you have to find 3 flowers that belong together: The petal color, shape and count and the core color have to be either the same or pairwise different for all 3 flowers.
@@ -87,6 +88,7 @@ desktop-file-install --delete-original       \
 %defattr(-,root,root,-)
 %{_datadir}/%{name}
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
+%{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/%{name}/qml
 # >> files

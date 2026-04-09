@@ -18,6 +18,7 @@
  **/
 
 import QtQuick 2.0
+import Sailfish.Silica 1.0
 
 import 'petals.js' as GameLib
 import 'util.js' as Util
@@ -129,7 +130,8 @@ Item {
         id: repeater
 
         delegate: Rectangle {
-            color: modelData.selected ? '#535759' : '#ffffff'
+            //color: modelData.selected ? '#535759' : '#ffffff'
+            color: modelData.selected ?  Theme.darkPrimaryColor : "transparent"
 
             x: layout.leftBorder + modelData.x * (layout.width + layout.spacing)
             y: layout.topBorder + modelData.y * (layout.height + layout.spacing)
