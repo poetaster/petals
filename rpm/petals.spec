@@ -14,7 +14,7 @@ Name:      petals
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 
 Summary:    Beautiful, brain-teasing puzzle for 1-4 players
-Version:    2.0.1
+Version:    2.0.2
 Release:    1
 Group:      Applications/Internet
 License:    GPLv3
