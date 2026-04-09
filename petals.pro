@@ -10,12 +10,15 @@ CONFIG += sailfishapp_qml
 DISTFILES += \
         rpm/petals.spec \
         petals.desktop \
-        data/petals.svg
+        data/petals.svg \
+        qml/*.qml \
+        qml/images/*.png \
+        qml/images/flowers/*,png \
+        qml/*.js
 
-RESOURCES += $${TARGET}.qrc
-QMAKE_RESOURCE_FLAGS += -threshold 0 -compress 9
-
-target.path = /usr/bin
+#RESOURCES += $${TARGET}.qrc
+#QMAKE_RESOURCE_FLAGS += -threshold 0 -compress 9
+#target.path = /usr/bin
 
 desktop.files = data/$${TARGET}.desktop
 desktop.path = /usr/share/applications
