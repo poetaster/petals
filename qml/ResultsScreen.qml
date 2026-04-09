@@ -41,7 +41,7 @@ Screen {
     MenuLabel {
         anchors.centerIn: parent
         color: 'white'
-        font.pixelSize: 30
+        font.pixelSize: platformWindow.scale(51)
         text: {
             var result = ['Game over', ''];
 
