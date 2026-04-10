@@ -44,7 +44,7 @@ DeveloperName: Thomas Perl
 Custom:
  - RepoType: github
  - Repo: https://github.com/poetaster/petals
-Icon: https://raw.githubusercontent.com/poetaster/petals/master/icons/172x172/harbour-dwd.png
+Icon: https://raw.githubusercontent.com/poetaster/petals/master/icons/172x172/petals.png
 Screenshots:
  - https://raw.githubusercontent.com/poetaster/petals/main/screen1.png
  - https://raw.githubusercontent.com/poetaster/petals/main/screen2.png
